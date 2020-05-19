@@ -1,0 +1,41 @@
+site_name: ModBadgerTrap
+nav:
+  - Home: index.md
+  - Literature:
+    - Page Table: page_table.md
+  - BadgerTrap:
+    - Badger Trap: badgertrap/badgertrap.md
+    - Badger Init: badgertrap/badgertrapinit.md
+  - Experiments:
+    - Building Kernel: badgertrap/kernel.md
+  - Meeting notes: meeting_notes.md
+theme: 
+  name: material
+extra_css: [assets/mycss.css]
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 3
+        separator: "-"
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist
+    - pymdownx.tabbed
+    - pymdownx.tilde
+    - markdown_include.include:
+        base_path: docs
+    - admonition
+    - codehilite
+    - footnotes
+    - meta
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML

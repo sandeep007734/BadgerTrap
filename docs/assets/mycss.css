@@ -1,0 +1,58 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+img[alt="sidebyside"] {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img[alt="drawing"] {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img[alt="large_drawing"] {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img + strong {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  bottom: 0;
+  vertical-align: bottom;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  bottom: 0;
+  vertical-align: bottom;
+}
+
+figcaption {
+  text-align: center;
+}
+
+
+th {
+    padding: 10px;
+  }
+  td {
+      padding: 8px;
+  }
